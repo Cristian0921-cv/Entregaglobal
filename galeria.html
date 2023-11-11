@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>formulario</title>
+    <link rel="stylesheet" href="./estilos/estilo/style.css">
+</head>  
 <body>
-    <p>
-        <h1>GALERIA</h1>
-    </p>
-    
+    <style>
+        body {
+            background-color: rgb(30, 102, 238);
+            color: black;
+        }
+        form {
+            display: grid; 
+            place-content: center;
+            max-width: 600px;
+            color: black;
+        }
+    </style>
+    <form>
+        <fieldset>
+            <legend><h3><b>Datos personales</b></h3></legend>
+            <div>
+        <label for="Nombre">Nombre</label>
+        <input id="Nombre" type="text" placeholder="Ingrese su Nombre">
+            </div>
+            <div>
+        <label for="Apellido">Apellido</label>
+        <input id="Apellido" type="text" placeholder="Ingrese su apellido">
+            </div>
+            <div>
+        <label for="Email">Email</label>
+        <input id="Email" type="email" placeholder="Ingrese su Email">
+            </div>
+            <div>
+        <label for="Contraseña">Contraseña</label>
+        <input id="Contraseña" type="password" placeholder="Ingrese su Contraseña">
+            </div>
+            <div>
+                <label for="provincia">provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="bsas">buenos aires</option>
+                    <option value="cba">cordoba</option>
+                    <option value="mdz">mendoza</option>
+                    <option value="jjy">jujuy</option>
+                </select>
+            </div>
+            <div>
+                <label for="consulta">consulta</label>
+                <textarea id="consulta" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <button>Enviar</button>
+        <button>Limpiar</button>
+    </form>
 </body>
 </html>
